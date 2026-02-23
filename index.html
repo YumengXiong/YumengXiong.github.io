@@ -11,27 +11,26 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Times New Roman', 'Microsoft YaHei', Georgia, serif; /* 英伦风字体 */
+            font-family: 'Times New Roman', 'Microsoft YaHei', Georgia, serif; 
             max-width: 1100px;
             margin: 0 auto;
             padding: 40px 20px;
-            background: #f5f1e9; /* 英伦米白色调 */
+            background: #f5f1e9; 
             color: #2c3e50;
             line-height: 1.7;
         }
-        /* 英伦风配色：红 #c8102e，蓝 #012169，米白 #f5f1e9，浅蓝 #e6f0f9 */
         .header {
             display: flex;
             align-items: center;
             gap: 50px;
             background: #ffffff;
             padding: 45px;
-            border-radius: 32px; /* 更圆润的边角增加可爱感 */
+            border-radius: 32px; 
             box-shadow: 0 8px 30px rgba(1, 33, 105, 0.08);
             margin-bottom: 45px;
             flex-wrap: wrap;
             justify-content: center;
-            border: 2px solid #012169; /* 英伦蓝边框 */
+            border: 2px solid #012169; 
             position: relative;
             overflow: hidden;
         }
@@ -41,28 +40,28 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 8px; /* 更粗的顶栏 */
-            background: linear-gradient(90deg, #c8102e, #012169); /* 英伦红+蓝渐变 */
+            height: 8px; 
+            background: linear-gradient(90deg, #c8102e, #012169); 
         }
         .avatar {
             width: 190px;
             height: 190px;
             border-radius: 50%;
             object-fit: cover;
-            border: 6px solid #e6f0f9; /* 浅蓝边框增加可爱感 */
+            border: 6px solid #e6f0f9; 
             box-shadow: 0 10px 25px rgba(1, 33, 105, 0.12);
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
         }
         .avatar::after {
-            content: '✨'; /* 可爱装饰元素 */
+            content: '✨'; 
             position: absolute;
             top: 10px;
             right: 10px;
             font-size: 24px;
         }
         .avatar:hover {
-            transform: scale(1.06) rotate(3deg); /* 轻微旋转增加活泼感 */
+            transform: scale(1.06) rotate(3deg); 
             box-shadow: 0 15px 30px rgba(1, 33, 105, 0.18);
         }
         .info {
@@ -72,10 +71,10 @@
         }
         .info h1 {
             font-size: 2.8em;
-            color: #012169; /* 英伦蓝主标题 */
+            color: #012169; 
             margin-bottom: 18px;
             font-weight: 700;
-            letter-spacing: 1px; /* 英伦风字母间距 */
+            letter-spacing: 1px; 
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
         .info p {
@@ -85,7 +84,7 @@
             line-height: 1.8;
         }
         .info p strong {
-            color: #c8102e; /* 英伦红强调 */
+            color: #c8102e; 
         }
         .info a {
             color: #012169;
@@ -134,13 +133,12 @@
             box-shadow: 0 12px 40px rgba(1, 33, 105, 0.1);
             transform: translateY(-3px);
         }
-        /* 通用标题样式 - 调整为浅色调 */
         .section h2 {
-            color: #4a6fa5; /* 浅英伦蓝，替代原来的深色 #012169 */
+            color: #4a6fa5; 
             font-size: 1.9em;
             margin-bottom: 28px;
             padding-left: 22px;
-            border-left: 4px solid #d64045; /* 浅英伦红，替代原来的 #c8102e */
+            border-left: 4px solid #d64045; 
             font-weight: 600;
             display: flex;
             align-items: center;
@@ -155,10 +153,10 @@
             text-indent: 2em;
             line-height: 1.9;
             text-align: justify;
-            background: #f9f7f3; /* 浅米色背景 */
+            background: #f9f7f3; 
             padding: 20px;
             border-radius: 16px;
-            border-left: 3px solid #4a6fa5; /* 同步改为浅蓝 */
+            border-left: 3px solid #4a6fa5; 
         }
         .interests ul {
             list-style: none;
@@ -168,27 +166,26 @@
             justify-content: center;
         }
         .interests li {
-            background: linear-gradient(135deg, #e6f0f9 0%, #f5f1e9 100%); /* 英伦色系渐变 */
-            color: #4a6fa5; /* 改为浅蓝 */
+            background: linear-gradient(135deg, #e6f0f9 0%, #f5f1e9 100%); 
+            color: #4a6fa5; 
             padding: 16px 32px;
             border-radius: 50px;
             font-size: 1.1em;
             transition: all 0.4s ease;
             box-shadow: 0 4px 12px rgba(1, 33, 105, 0.08);
-            border: 1px solid #4a6fa5; /* 改为浅蓝 */
+            border: 1px solid #4a6fa5; 
             position: relative;
         }
         .interests li::before {
-            content: '🎀'; /* 可爱装饰 */
+            content: '🎀'; 
             margin-right: 8px;
         }
         .interests li:hover {
-            background: linear-gradient(135deg, #d64045 0%, #4a6fa5 100%); /* 改为浅色系渐变 */
+            background: linear-gradient(135deg, #d64045 0%, #4a6fa5 100%); 
             color: #fff;
             transform: translateY(-4px) scale(1.03);
             box-shadow: 0 8px 20px rgba(1, 33, 105, 0.2);
         }
-        /* 学历表格样式 - 浅色边框 */
         .edu table, .research table {
             width: 100%;
             border-collapse: collapse;
@@ -197,11 +194,10 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(1, 33, 105, 0.05);
-            border: 1px solid #e6f0f9; /* 浅蓝边框 */
+            border: 1px solid #e6f0f9; 
         }
-        /* 表格标题栏 - 改为浅色系渐变 */
         .edu th, .research th {
-            background: linear-gradient(90deg, #4a6fa5 0%, #d64045 100%); /* 浅蓝+浅红渐变 */
+            background: linear-gradient(90deg, #4a6fa5 0%, #d64045 100%); 
             color: #fff;
             padding: 18px;
             text-align: center;
@@ -211,7 +207,7 @@
         .edu td, .research td {
             padding: 18px;
             text-align: center;
-            border-bottom: 1px solid #f0f4f9; /* 浅分隔线 */
+            border-bottom: 1px solid #f0f4f9; 
             color: #2c3e50;
             transition: all 0.3s ease;
         }
@@ -224,7 +220,7 @@
         }
         .contact {
             text-align: center;
-            background: linear-gradient(135deg, #4a6fa5 0%, #d64045 100%); /* 改为浅色系渐变 */
+            background: linear-gradient(135deg, #4a6fa5 0%, #d64045 100%); 
             color: #fff;
             box-shadow: 0 10px 30px rgba(1, 33, 105, 0.15);
             border-radius: 32px;
@@ -311,7 +307,7 @@
     <div class="section bio">
         <h2>👨‍🎓 About Me</h2>
         <p>
-            Hello! I'm Zekun Hong from China, currently pursuing a Bachelor's degree in Environment Science at Fudan University. 
+            Hello! I'm Yumeng Xiong from China, currently pursuing a Bachelor's degree in Math at Fudan University. 
             While my major is in environmental science, my academic interests lie more in the incredible fields of data science, 
             Human-Computer Interaction (HCI), and machine learning but I'm no sure which one I would reseaech it deeply in the future.
             If you are also interested in history,AI,and economy,please feel free to contact with me and maybe we can make friends.
